@@ -1,0 +1,7 @@
+services:
+  parser-api:
+    build: .
+    ports:
+      - "8010:8010"
+    environment:
+      PARSER_API_KEY: ${PARSER_API_KEY:?Set PARSER_API_KEY before starting docker compose}
